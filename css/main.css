@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'HKGroteskPro-Bold';
+  src: url("../assets/fonts/hk-grotesk-pro-bold.eot");
+  src: url("../assets/fonts/hk-grotesk-pro-bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hk-grotesk-pro-bold.woff2") format("woff2"), url("../assets/fonts/hk-grotesk-pro-bold.woff") format("woff"), url("../assets/fonts/hk-grotesk-pro-bold.ttf") format("truetype"), url("../assets/fonts/hk-grotesk-pro-bold.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HKGroteskPro-Medium';
+  src: url("../assets/fonts/hk-grotesk-pro-medium.eot");
+  src: url("../assets/fonts/hk-grotesk-pro-medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hk-grotesk-pro-medium.woff2") format("woff2"), url("../assets/fonts/hk-grotesk-pro-medium.woff") format("woff"), url("../assets/fonts/hk-grotesk-pro-medium.ttf") format("truetype"), url("../assets/fonts/hk-grotesk-pro-medium.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HKGroteskPro-Regular';
+  src: url("../assets/fonts/hk-grotesk-pro-regular.eot");
+  src: url("../assets/fonts/hk-grotesk-pro-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hk-grotesk-pro-regular.woff2") format("woff2"), url("../assets/fonts/hk-grotesk-pro-regular.woff") format("woff"), url("../assets/fonts/hk-grotesk-pro-regular.ttf") format("truetype"), url("../assets/fonts/hk-grotesk-pro-regular.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HKGroteskPro-SemiBold';
+  src: url("../assets/fonts/hk-grotesk-pro-semibold.eot");
+  src: url("../assets/fonts/hk-grotesk-pro-semibold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hk-grotesk-pro-semibold.woff2") format("woff2"), url("../assets/fonts/hk-grotesk-pro-semibold.woff") format("woff"), url("../assets/fonts/hk-grotesk-pro-semibold.ttf") format("truetype"), url("../assets/fonts/hk-grotesk-pro-semibold.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: 'HKGroteskPro-Medium', 'Arial';
+  color: #808080;
+  background-color: #FAFAFA; }
+
+* {
+  line-height: 1; }
+
+.btn-lg {
+  font-size: 15px; }
+
+header {
+  background-color: #ffffff; }
+  header .top-bar {
+    display: inline-block;
+    width: 100%;
+    background-color: #F1F1F1;
+    font-size: 14px; }
+    header .top-bar .lang-selector,
+    header .top-bar .news-link,
+    header .top-bar .news-link span {
+      display: inline-block; }
+    header .top-bar .lang-selector {
+      background-color: #E6E6E6; }
+      header .top-bar .lang-selector span {
+        font-size: 10px; }
+    header .top-bar .news-link {
+      background-color: #ffffff; }
+      header .top-bar .news-link span {
+        width: 5px;
+        height: 5px;
+        background-color: #FF6500; }
+    header .top-bar a {
+      color: #808080; }
+      header .top-bar a:hover {
+        text-decoration: none; }
+    header .top-bar .top-bar-right a, header .top-bar .top-bar-right p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 0 20px;
+      -webkit-transition: background ease-out 200ms;
+      -o-transition: background ease-out 200ms;
+      transition: background ease-out 200ms; }
+      header .top-bar .top-bar-right a.selected, header .top-bar .top-bar-right p.selected {
+        background-color: #ffffff; }
+      header .top-bar .top-bar-right a:hover, header .top-bar .top-bar-right p:hover {
+        background-color: rgba(255, 255, 255, 0.4); }
+  header .header-core nav a {
+    font-size: 15px;
+    color: #343A40; }
+
+main {
+  background-color: #FAFAFA; }
+  main .crumbs {
+    font-size: 15px; }
+    main .crumbs a, main .crumbs p {
+      color: #808080;
+      margin: 0; }
+    main .crumbs .crumbs-project-name p {
+      font-size: 22px;
+      font-weight: bold; }
+    main .crumbs .crumbs-project-name span {
+      background-color: #E6E6E6;
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 3px;
+      font-weight: normal; }
+    main .crumbs .crumbs-edit a {
+      color: #A4A4A4;
+      text-decoration: underline;
+      -webkit-transition: color ease-out 200ms;
+      -o-transition: color ease-out 200ms;
+      transition: color ease-out 200ms; }
+      main .crumbs .crumbs-edit a:hover {
+        color: #666666; }
+    main .crumbs .crumbs-edit span {
+      color: #A4A4A4;
+      font-size: 10px; }
+  main .generator-title-back {
+    font-size: 21px; }
+  main .generator-title-info h1 {
+    font-size: 22px;
+    color: #343A40;
+    font-weight: 600; }
+  main .generator-title-info p {
+    font-size: 13px;
+    color: #A4A4A4; }
+  main .document-langs {
+    list-style-type: none; }
+    main .document-langs li {
+      background-color: #ffffff;
+      border: solid 1px #E6E6E6; }
+      main .document-langs li img {
+        width: 24px;
+        height: 24px; }
+      main .document-langs li p {
+        font-size: 14px;
+        margin: 0;
+        color: #666666; }
+      main .document-langs li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 13px;
+        border-left: solid 1px #F1F1F1; }
+        main .document-langs li a:hover {
+          text-decoration: none; }
+      main .document-langs li.active {
+        border: solid 2px #1CC691; }
+  main .switch-pro-hint {
+    font-size: 22px; }
+    main .switch-pro-hint:hover {
+      text-decoration: none; }
+  main .steps img {
+    width: 60px; }
+  main .steps .step-title h1 {
+    color: #CCCCCC;
+    font-size: 13px;
+    text-transform: uppercase; }
+  main .steps .step-title p {
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold; }
+  main .steps .step {
+    -webkit-transition: background ease-out 200ms;
+    -o-transition: background ease-out 200ms;
+    transition: background ease-out 200ms; }
+    main .steps .step.active {
+      border-top: solid 3px #407FFF; }
+    main .steps .step:not(.active) {
+      cursor: pointer; }
+      main .steps .step:not(.active):hover {
+        background-color: #FAFAFA; }
+  main .generator-intro .generator-intro-data {
+    border-left: solid 4px #407FFF; }
+    main .generator-intro .generator-intro-data p {
+      line-height: 1.3;
+      font-size: 14px; }
+  main .generator-intro .generator-intro-buttons > span {
+    text-transform: uppercase;
+    color: #A4A4A4;
+    font-size: 14px; }
+  main .generator-intro .generator-intro-buttons a span {
+    background-color: #ffffff;
+    color: #FF6500;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 3px 7px;
+    font-weight: bold; }
+  main .side-unit h1 {
+    font-size: 14px;
+    color: #A4A4A4; }
+  main .side-unit p {
+    font-size: 13px;
+    line-height: 1.3; }

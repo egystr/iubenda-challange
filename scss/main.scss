@@ -1,0 +1,293 @@
+@font-face {
+	font-family: 'HKGroteskPro-Bold';
+	src: url('../assets/fonts/hk-grotesk-pro-bold.eot');
+	src: url('../assets/fonts/hk-grotesk-pro-bold.eot?#iefix') format('embedded-opentype'),
+             url('../assets/fonts/hk-grotesk-pro-bold.woff2') format('woff2'),
+	     url('../assets/fonts/hk-grotesk-pro-bold.woff') format('woff'),
+	     url('../assets/fonts/hk-grotesk-pro-bold.ttf') format('truetype'),
+	     url('../assets/fonts/hk-grotesk-pro-bold.svg#youworkforthem') format('svg');
+	font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HKGroteskPro-Medium';
+  src: url('../assets/fonts/hk-grotesk-pro-medium.eot');
+  src: url('../assets/fonts/hk-grotesk-pro-medium.eot?#iefix') format('embedded-opentype'),
+              url('../assets/fonts/hk-grotesk-pro-medium.woff2') format('woff2'),
+        url('../assets/fonts/hk-grotesk-pro-medium.woff') format('woff'),
+        url('../assets/fonts/hk-grotesk-pro-medium.ttf') format('truetype'),
+        url('../assets/fonts/hk-grotesk-pro-medium.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HKGroteskPro-Regular';
+  src: url('../assets/fonts/hk-grotesk-pro-regular.eot');
+  src: url('../assets/fonts/hk-grotesk-pro-regular.eot?#iefix') format('embedded-opentype'),
+              url('../assets/fonts/hk-grotesk-pro-regular.woff2') format('woff2'),
+        url('../assets/fonts/hk-grotesk-pro-regular.woff') format('woff'),
+        url('../assets/fonts/hk-grotesk-pro-regular.ttf') format('truetype'),
+        url('../assets/fonts/hk-grotesk-pro-regular.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HKGroteskPro-SemiBold';
+  src: url('../assets/fonts/hk-grotesk-pro-semibold.eot');
+  src: url('../assets/fonts/hk-grotesk-pro-semibold.eot?#iefix') format('embedded-opentype'),
+              url('../assets/fonts/hk-grotesk-pro-semibold.woff2') format('woff2'),
+        url('../assets/fonts/hk-grotesk-pro-semibold.woff') format('woff'),
+        url('../assets/fonts/hk-grotesk-pro-semibold.ttf') format('truetype'),
+        url('../assets/fonts/hk-grotesk-pro-semibold.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Background colors
+$bg-ultra-gray: #FAFAFA;
+$bg-light-gray: #F1F1F1;
+$bg-medium-gray: #E6E6E6;
+
+//Colors
+$white: #ffffff;
+$orange: #FF6500;
+$green: #1CC691;
+$blue: #407FFF;
+
+//font colors
+$font-ultra-gray: #CCCCCC;
+$font-light-gray: #A4A4A4;
+$font-normal-gray: #666666;
+$font-medium-gray: #808080;
+$font-hard-gray: #343A40;
+
+//font sizes
+$font-10: 10px;
+$font-11: 11px;
+$font-12: 12px;
+$font-13: 13px;
+$font-14: 14px;
+$font-15: 15px;
+$font-22: 22px;
+
+html,body{
+  height: 100%;
+}
+body{
+  font-family: 'HKGroteskPro-Medium', 'Arial';
+  color: $font-medium-gray;
+  background-color: $bg-ultra-gray;
+}
+*{
+  line-height: 1;
+}
+.btn-lg{
+  font-size: $font-15;
+}
+header{
+  background-color: $white;
+  .top-bar{
+    display: inline-block;
+    width: 100%;
+    background-color: $bg-light-gray;
+    font-size: $font-14;
+    .lang-selector,
+    .news-link,
+    .news-link span{
+      display: inline-block;
+    }
+    .lang-selector{
+      background-color: $bg-medium-gray;
+      span{
+        font-size: $font-10;
+      }
+    }
+    .news-link{
+      background-color: $white;
+      span{
+        width: 5px;
+        height: 5px;
+        background-color: $orange;
+      }
+    }
+    a{
+      color: $font-medium-gray;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    .top-bar-right{
+      a,p{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+        transition: background ease-out 200ms;
+        &.selected{
+          background-color: $white;
+        }
+        &:hover{
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+  }
+  .header-core{
+    nav a{
+      font-size: $font-15;
+      color: $font-hard-gray;
+    }
+  }
+}
+main{
+  background-color: $bg-ultra-gray;
+  .crumbs{
+    font-size: $font-15;
+    a,p{
+      color: $font-medium-gray;
+      margin: 0;
+    }
+    .crumbs-project-name{
+      p{
+        font-size: $font-22;
+        font-weight: bold;
+      }
+      span{
+        background-color: $bg-medium-gray; 
+        font-size: $font-13;
+        padding: 4px 10px;
+        border-radius: 3px;
+        font-weight: normal;
+      }
+    }
+    .crumbs-edit{
+      a{
+        color: $font-light-gray;
+        text-decoration: underline;
+        transition: color ease-out 200ms;
+        &:hover{
+          color: $font-normal-gray;
+        }
+      }
+      span{
+        color: $font-light-gray;
+        font-size: 10px;
+      }
+    }
+  }
+  .generator-title-back{
+    font-size: 21px;
+  }
+  .generator-title-info{
+    h1{
+      font-size: $font-22;
+      color: $font-hard-gray;
+      font-weight: 600;
+    }
+    p{
+      font-size: $font-13;
+      color: $font-light-gray;
+    }
+  }
+  .document-langs{
+    list-style-type: none;
+    li{
+      background-color: $white;
+      border: solid 1px $bg-medium-gray;
+      img{
+        width: 24px;
+        height: 24px;
+      }
+      p{
+        font-size: $font-14;
+        margin: 0;
+        color: $font-normal-gray;
+      }
+      a{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: $font-13;
+        border-left: solid 1px $bg-light-gray;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      &.active{
+        border: solid 2px $green;
+      }
+    }
+  }
+  .switch-pro-hint{
+    font-size: $font-22;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .steps{
+    img{
+      width: 60px;
+    }
+    .step-title{
+      h1{
+        color: $font-ultra-gray;
+        font-size: $font-13;
+        text-transform: uppercase;
+      }
+      p{
+        color: $font-normal-gray;
+        font-size: $font-14;
+        font-weight: bold
+      }
+    }
+    .step{
+      transition: background ease-out 200ms;
+      &.active{
+        border-top:solid 3px $blue;
+      }
+      &:not(.active){
+        cursor: pointer;
+        &:hover{
+          background-color: $bg-ultra-gray;
+        }
+      }
+    }
+    
+  }
+  .generator-intro{
+    .generator-intro-data{
+      border-left: solid 4px $blue;
+      p{
+        line-height: 1.3;
+        font-size: $font-14;
+      }
+    }
+    .generator-intro-buttons{
+      >span{
+        text-transform: uppercase;
+        color: $font-light-gray;
+        font-size: $font-14;
+      }
+      a{
+        span{
+          background-color: $white;
+          color: $orange;
+          font-size: $font-10;
+          text-transform: uppercase;
+          padding: 3px 7px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .side-unit{
+    h1{
+      font-size: $font-14;
+      color: $font-light-gray;
+    }
+    p{
+      font-size: $font-13;
+      line-height: 1.3;
+    }
+  }
+}
